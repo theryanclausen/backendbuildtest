@@ -2,9 +2,6 @@
   "name": "irsr-backend",
   "version": "1.13.0",
   "main": "index.js",
-  "engines":{
-    "yarn": "1.13.0"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
