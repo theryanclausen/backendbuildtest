@@ -17,6 +17,10 @@ mwConfig(server)
 
 const { authenticate, generateToken, checkRole } = require('./data/auth/authenticate')
 
+server.get('/', (req,res) =>{
+	res.send('<h1>haaallaaaa</h1>')
+})
+
 // server.use('/api/schools', schoolRoutes)
 // server.use('/api/users', userRoutes)
 // server.use('/api/issues', issueRoutes)
