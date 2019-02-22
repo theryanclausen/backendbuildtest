@@ -1,13 +1,13 @@
 //require('dotenv').config()
 const express = require('express')
-const userRoutes = require('./data/routes/userRoutes')
-const schoolRoutes = require('../irsr-backend/data/routes/schoolRoutes')
-const authRoutes = require('./data/routes/authRoutes')
-const issueRoutes = require('./data/routes/issueRoutes')
-const bcrypt = require('bcryptjs')
-// const jwt = require('jsonwebtoken')
-const mwConfig = require('./data/mwConfig')
-const db = require('./data/dbConfig.js')
+// const userRoutes = require('./data/routes/userRoutes')
+// const schoolRoutes = require('../irsr-backend/data/routes/schoolRoutes')
+// const authRoutes = require('./data/routes/authRoutes')
+// const issueRoutes = require('./data/routes/issueRoutes')
+// const bcrypt = require('bcryptjs')
+// // const jwt = require('jsonwebtoken')
+// const mwConfig = require('./data/mwConfig')
+// const db = require('./data/dbConfig.js')
 
 const PORT = process.env.PORT || 5000
 const server = express()
@@ -15,7 +15,7 @@ server.use(express.json())
 
 //mwConfig(server)
 
-const { authenticate, generateToken, checkRole } = require('./data/auth/authenticate')
+//const { authenticate, generateToken, checkRole } = require('./data/auth/authenticate')
 
 server.get('/', (req,res) =>{
 	res.send('<h1>haaallaaaa</h1>')
