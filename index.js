@@ -1,4 +1,4 @@
-require('dotenv').config()
+//require('dotenv').config()
 const express = require('express')
 const userRoutes = require('./data/routes/userRoutes')
 const schoolRoutes = require('../irsr-backend/data/routes/schoolRoutes')
