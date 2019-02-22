@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000
 const server = express()
 server.use(express.json())
 
-mwConfig(server)
+//mwConfig(server)
 
 const { authenticate, generateToken, checkRole } = require('./data/auth/authenticate')
 
