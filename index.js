@@ -17,9 +17,9 @@ mwConfig(server)
 
 const { authenticate, generateToken, checkRole } = require('./data/auth/authenticate')
 
-server.use('/api/schools', schoolRoutes)
-server.use('/api/users', userRoutes)
-server.use('/api/issues', issueRoutes)
+// server.use('/api/schools', schoolRoutes)
+// server.use('/api/users', userRoutes)
+// server.use('/api/issues', issueRoutes)
 
 // //AUTH ENDPOINTS
 server.post('/api/register', (req, res) => {
