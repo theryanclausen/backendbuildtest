@@ -1,9 +1,9 @@
 //require('dotenv').config()
 const express = require('express')
-// const userRoutes = require('./data/routes/userRoutes')
-// const schoolRoutes = require('../irsr-backend/data/routes/schoolRoutes')
-// const authRoutes = require('./data/routes/authRoutes')
-// const issueRoutes = require('./data/routes/issueRoutes')
+const userRoutes = require('./data/routes/userRoutes')
+const schoolRoutes = require('../data/routes/schoolRoutes')
+//const authRoutes = require('./data/routes/authRoutes')
+const issueRoutes = require('./data/routes/issueRoutes')
 // const bcrypt = require('bcryptjs')
 // // const jwt = require('jsonwebtoken')
 // const mwConfig = require('./data/mwConfig')
@@ -21,9 +21,9 @@ server.get('/', (req,res) =>{
 	res.send('<h1>haaallaaaa</h1>')
 })
 
-// server.use('/api/schools', schoolRoutes)
-// server.use('/api/users', userRoutes)
-// server.use('/api/issues', issueRoutes)
+server.use('/api/schools', schoolRoutes)
+server.use('/api/users', userRoutes)
+server.use('/api/issues', issueRoutes)
 
 // //AUTH ENDPOINTS
 // server.post('/api/register', (req, res) => {
