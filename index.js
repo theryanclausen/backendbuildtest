@@ -1,7 +1,7 @@
 //require('dotenv').config()
 const express = require('express')
 const userRoutes = require('./data/routes/userRoutes')
-const schoolRoutes = require('../data/routes/schoolRoutes')
+const schoolRoutes = require('./data/routes/schoolRoutes')
 //const authRoutes = require('./data/routes/authRoutes')
 const issueRoutes = require('./data/routes/issueRoutes')
 // const bcrypt = require('bcryptjs')
